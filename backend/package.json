@@ -4,12 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "wsserver": "node index.js",
+    "wsserver-dev": "nodemon index.js",
+    "siserver": "node socketioserver.js",
+    "siserver-dev": "nodemon socketioserver.js"
   },
   "author": "f0cuSsss",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "nodemon": "^2.0.7",
+    "socket.io": "^4.0.0",
     "ws": "^7.4.4"
   }
 }

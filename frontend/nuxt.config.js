@@ -24,7 +24,8 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '@/plugins/notif.js'
+    '@/plugins/notif.js',
+    { src: '@/plugins/socket.io.js', ssr: false, },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
