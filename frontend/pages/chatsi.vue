@@ -2,8 +2,6 @@
   <div class="container">
     <p class="main-title">Chat</p>
 
-
-
     <div class="signin-block" v-if="!currentUser">
       <input 
         class="username-input"
@@ -237,14 +235,29 @@ export default {
   width: 100%;
 }
 
+.input-message:focus {
+  background-color: rgba(179, 179, 179, 0.74);
+  outline: none;
+  border-bottom: 2px solid green;
+}
+
 .send-message {
   height: 30px;
   border: none;
   background-color: rgb(8, 165, 8);
+  cursor: pointer;
   border-radius: 5px;
   color: white;
   height: 100%;
   padding: 0 20px;
+  margin-left: 5px;
+  outline: none;
+  transition: all 0.1s ease-in-out;
+}
+
+.send-message:hover {
+  filter: brightness(0.9);
+  transition: all 0.1s ease-in-out;
 }
 
 
