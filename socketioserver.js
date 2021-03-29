@@ -9,7 +9,7 @@ const io = require('socket.io')(http, {
     },
     allowEIO3: true
 });
-const PORT = 3050 || process.env.PORT;
+const PORT = process.env.PORT || 3050;
 
 const users = [];
 
