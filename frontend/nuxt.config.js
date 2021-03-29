@@ -33,13 +33,29 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/pwa'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/pwa'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  pwa: {
+    meta: {
+      title: 'Chat',
+      author: 'Vladislav Parubchenko',
+      theme_color: '#ffffff'
+    },
+    manifest: {
+      start_url: '/chatsi',
+      name: 'FC chat',
+      short_name: 'FCC',
+      lang: 'en',
+    },
   }
 }
